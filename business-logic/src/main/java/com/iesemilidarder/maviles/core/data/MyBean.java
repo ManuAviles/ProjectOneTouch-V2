@@ -1,11 +1,31 @@
 package com.iesemilidarder.maviles.core.data;
 
-public abstract class MyBean {
+public class MyBean {
+
+    // Atributos
 
     private String name;
     private String description;
     private String date;
     private Double price;
+
+
+    // Constructor
+
+    public  MyBean(String name, String description, String date, Double price){
+
+        this.name = name;
+        this.description = description;
+        this.date = date;
+        this.price = price;
+    }
+
+    public MyBean() {
+
+    }
+
+
+    // Getters and Setters
 
     public String getName() {
         return name;
